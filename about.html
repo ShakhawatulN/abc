@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>www.hotelNasi.com</title>
+
+  <!-- Custom Styles link -->
+  <link rel="stylesheet" href="style.css">
+  <!--Custom Same Styles link-->
+  <link rel="stylesheet" href="same.css">
+</head>
+
+<body id="body" class="light">
+
+  <div class="logo-box">
+    <button class="theme" id="theme">Dark Theme</button>
+    <img src="logo.png" alt="" class="logo">
+  </div>
+  <div class="links" id="links">
+    <ul>
+      <li>
+        <a href="index.html">home</a>
+      </li>
+      <li><a class="active" href="about.html">about</a></li>
+      <li><a href="rooms.html">rooms</a></li>
+      <li><a href="services.html">services</a></li>
+      <li><a href="contact.html">contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class="btn-box"><img src="menu-btn.png" alt="" class="menu-btn" id="menu-btn">
+  </div>
+
+  <section class="sec-one">
+    <h1 class="h1">A FEW WORDS ABOUT US</h1>
+    <img src="about.jpg" alt="">
+    <p class="hr">Lorem ipsum dolor sit amet, ctetur adipisicing elit. Aut fuga animi vitae provident aperiam, corporis quis totam modi repellat recusandae? Ab, magnam ex qui, neque quo, sequi accusantium modi consectetur et repellat aspernatur exercitationem. Doloremque a, expedita hic quisquam eveniet eaque, earum ratione facere. Quibusdam atque accusamus, sit repudiandae, molestias, molestiae adipisci, nemo aliquid doloribus commodi suscipit eum non. Alias amet deleniti sint excepturi architecto quae error, suscipit accusamus magni ipsa beatae eos necessitatibus recusandae itaque, sit nobis esse asperiores quam, in enim eveniet, impedit porro. Totam nisi recusandae facilis accusamus, possimus in illum ad reprehenderit quidem, tempore minus officia.</p>
+
+    <h1 class="h1">OUR ADVANTAGES</h1>
+    <h2>ALIQUAM VOLUTNA ERATFU</h2>
+    <p>Lorem ipsum dolor sit amet, ctetur adipisicing elit. Saepe ipsa harum porro consectetur voluptas cumque illum, quia possimus quasi est itaque reprehenderit laboriosam vitae eos eaque incidunt facere et aliquam obcaecati enim. Suscipit est nihil nam excepturi earum dicta, nostrum inventore. Aperiam nemo quo iste.</p>
+
+    <h2>QUISQUE TELLUS NISVIRRA</h2>
+    <p>Duis ultricies pharetra magna. Donec accumsan males uada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, element cursus eleifend, elit. Aenean auctor wisi et.</p>
+
+    <h2>NAM SOLLICITU NEQUE</h2>
+    <p class="hr">Possimus ad nostrum enim quos labore sed sapiente fuga omnis debitis maxime. Incidunt distinctio tenetur autem ullam sint recusandae non perferendis, dicta magni aut mollitia, minima doloribus necessitatibus. Odio tenetur, eligendi dicta facilis doloremque qui, ex modi fugit quasi praesentium. Quidem error aspernatur esse in porro!</p>
+
+    <h1 class="h1">HOTEL LEISURE ROOMS</h1>
+
+    <div class="sec-one-imgs">
+      <img src="hlr1.jpg" alt="">
+      <img src="hlr2.jpg" alt="">
+      <img src="hlr3.jpg" alt="">
+      <img src="hlr4.jpg" alt="">
+      <img src="hlr5.jpg" alt="">
+      <img src="hlr6.jpg" alt="">
+      <img src="hlr7.jpg" alt="">
+      <img src="hlr8.jpg" alt="">
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-box">
+      <div class="one">
+        <h1>quick links</h1>
+        <h2>
+          <ul>
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="rooms.html">rooms</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="contact.html">contact</a>
+            </li>
+          </ul>
+        </h2>
+      </div>
+      <div class="two">
+        <h1>rooms</h1>
+        <ul>
+          <li>STANDARD ROOMS</li>
+          <li>SUITE ROOMS</li>
+          <li>DELUXE ROOMS</li>
+          <li>EXCUTIVE ROOMS</li>
+        </ul>
+      </div>
+      <div class="three">
+        <h1>contact us</h1>
+        <ul>
+          <li>Saheda Garden, Sutrapur</li>
+          <li>Bogura, Bangladesh</li>
+          <br>
+          <li>PHONE:- +8801718127044</li>
+          <li>PHONE:- +8801303929947</li>
+        </ul>
+      </div>
+      <div class="four">
+        <h1>follow us</h1>
+
+        <a href="https://www.facebook.com/sakhawatul.islam.18"><img src="facebook.png" alt=""></a>
+        <a href="https://www.facebook.com/sakhawatul.islam.18"><img src="twitter.png" alt=""></a>
+        <a href="https://www.facebook.com/sakhawatul.islam.18"><img src="google.png" alt=""></a>
+        <a href="https://www.facebook.com/sakhawatul.islam.18"><img src="wifi.png" alt=""></a>
+      </div>
+    </div>
+    <h3>Copyright &copy;.All rights reserved.</h3>
+  </footer>
+
+  <script>
+    // for links
+
+    var state = false;
+    var bar = document.getElementById('links');
+    var btn = document.getElementById('menu-btn');
+    var body = document.getElementById('body')
+    var theme_btn = document.getElementById('theme');
+
+
+    btn.addEventListener('click', function() {
+      if (state) {
+        bar.classList = 'none links';
+        state = false;
+      } else {
+        bar.classList = 'block links';
+        state = true;
+      }
+    });
+
+    theme_btn.addEventListener('click', function() {
+      if (state) {
+        body.classList = 'light';
+        theme_btn.innerText = 'Dark Theme'
+        state = false;
+      } else {
+        body.classList = 'dark';
+        theme_btn.innerText = 'Light Theme'
+        state = true;
+      }
+    });
+
+  </script>
+</body>
+
+</html>
